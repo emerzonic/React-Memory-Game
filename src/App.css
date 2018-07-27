@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: rgba(26, 21, 21, 0.993);
+  background: transparent;
+  background-image: url('christmas-dark.png');
+  height: 250px;
+  padding: 20px 5px;
+  color: white;
+  text-align:center;
+  margin-top:55px;
+}
+
+
+.App-title {
+  font-size: 5rem;
+  margin-top: 5%;
+}
+
+.App-intro {
+  font-size:2rem;
+}
+
+.App-hearder {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spacer{
+  height:10%;
+}
+
+.App-nav {
+  font-size:2rem;
+  font-weight:bolder;
+  font-family: 'Exo', sans-serif;
+  text-align: center;
+}
+
+
+.ui.fixed.menu, .ui[class*="top fixed"].menu {
+  background-color:rgb(117,68,181)
+}
+
+.ui.menu .item {
+  color:white;
+}
+
+.headerContent{
+  background: rgba(19, 2, 43, 0.418);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.ui.grid>.column:not(.row) {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.ui.grid+.grid {
+  margin-top: 2rem;
+}
+
+.ui.card>.image>img, .ui.cards>.card>.image>img:hover {
+  -webkit-box-shadow: 0px 11px 25px 4px rgba(0,0,0,0.47); 
+  box-shadow: 0px 11px 25px 4px rgba(0,0,0,0.47);
+  }
+
+  .ui.card>.image:not(.ui)>img, .ui.cards>.card>.image:not(.ui)>img {
+    border: 3px solid rgb(226, 226, 228)
+}
