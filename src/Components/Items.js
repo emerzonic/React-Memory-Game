@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import img from './assets';
 import '../App.css';
 
+
 class Item1 extends Component {
   constructor(props){
-    super(props)
-    this.id = 1
+    super(props);
+    this.id = 1;
   
   this.onClick=()=>{
     this.props.checkItemGroup(this.id);
     this.props.shuffle(this.props.cards);
-  }
+  };
 }
   render() {
     return (
@@ -26,7 +27,7 @@ class Item1 extends Component {
 class Item2 extends Component {
   constructor(props){
     super(props)
-    this.id = 2
+    this.id = 2;
   
     this.onClick=()=>{
       this.props.checkItemGroup(this.id);
@@ -270,3 +271,4 @@ export default {
   Item11:Item11,
   Item12:Item12
 };
+

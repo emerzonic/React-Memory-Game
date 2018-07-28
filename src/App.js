@@ -14,18 +14,18 @@ class App extends Component {
     this.state = {
       score: 0,
       topScore: 0,
+      shake: true, 
       message: 'Click on an image to begin'
     };
-    this.trackGroups = [];
-    this.tracker = 0;
+    this.trackCards = [];
 
     this.checkItemGroup = (cardId) => {
-      if (this.trackGroups.includes(cardId)) {
+      if (this.trackCards.includes(cardId)) {
         this.resetState();
-        this.trackGroups = [];
+        this.trackCards = [];
       } else {
         this.updateScore();
-        this.trackGroups.push(cardId);
+        this.trackCards.push(cardId);
       }
     };
 
@@ -34,24 +34,28 @@ class App extends Component {
       this.setState({
         score: this.state.score + 1,
         message: "You got it!"
-      })
+      });
       this.updateTopscore();
-    }
+    };
 
     this.updateTopscore = () => {
       if(this.state.score >= this.state.topScore){
       this.setState({
         topScore: this.state.score + 1,
-      })
+      });
       }
-    }
+    };
 
     this.resetState = () => {
       this.setState({
         score: 0,
-        message: "You missed it!"
-      })
-    }
+        message: "😜"
+      });
+    };
+
+    this.shake = ()=>{
+        this.setState({shake: true});
+    };
 }
 
   render() {
@@ -59,7 +63,7 @@ class App extends Component {
       <div>
         <Nav nav={this.state}/>
         <Header/>
-        <Cards checkItemGroup={this.checkItemGroup}/>
+        <Cards checkItemGroup={this.checkItemGroup} className={this.state.shake ? 'shake': null} />
         <Footer/>
       </div>
     );
