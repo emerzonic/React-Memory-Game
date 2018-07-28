@@ -11,7 +11,7 @@
   background-color: rgba(26, 21, 21, 0.993);
   background: transparent;
   background-image: url('christmas-dark.png');
-  height: 250px;
+  height: 200px;
   padding: 20px 5px;
   color: white;
   text-align:center;
@@ -19,12 +19,12 @@
 }
 
 .App-title {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-top: 5%;
 }
 
 .App-intro {
-  font-size:2rem;
+  font-size:1.5rem;
 }
 
 .App-hearder {

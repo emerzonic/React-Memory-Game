@@ -3,12 +3,12 @@ import img from './assets';
 import '../App.css';
 
 
+
 class Item1 extends Component {
   constructor(props){
     super(props);
     this.id = 1;
-  
-  this.onClick=()=>{
+    this.onClick=()=>{
     this.props.checkItemGroup(this.id);
     this.props.shuffle(this.props.cards);
   };
@@ -28,10 +28,9 @@ class Item2 extends Component {
   constructor(props){
     super(props)
     this.id = 2;
-  
     this.onClick=()=>{
-      this.props.checkItemGroup(this.id);
-      this.props.shuffle(this.props.cards);
+    this.props.checkItemGroup(this.id);
+    this.props.shuffle(this.props.cards);
     }
   }
   render() {
@@ -49,10 +48,9 @@ class Item3 extends Component {
   constructor(props){
     super(props)
     this.id = 3
-  
     this.onClick=()=>{
-      this.props.checkItemGroup(this.id);
-      this.props.shuffle(this.props.cards);
+    this.props.checkItemGroup(this.id);
+    this.props.shuffle(this.props.cards);
     }
   }
   render() {
@@ -70,10 +68,9 @@ class Item4 extends Component {
   constructor(props){
     super(props)
     this.id = 4
-  
     this.onClick=()=>{
-      this.props.checkItemGroup(this.id);
-      this.props.shuffle(this.props.cards);
+    this.props.checkItemGroup(this.id);
+    this.props.shuffle(this.props.cards);
     }
   }
 
@@ -93,10 +90,9 @@ class Item5 extends Component {
   constructor(props){
     super(props)
     this.id = 5
-  
     this.onClick=()=>{
-      this.props.checkItemGroup(this.id);
-      this.props.shuffle(this.props.cards);
+    this.props.checkItemGroup(this.id);
+    this.props.shuffle(this.props.cards);
     }
   }
   render() {
@@ -114,10 +110,9 @@ class Item6 extends Component {
   constructor(props){
     super(props)
     this.id = 6
-  
     this.onClick=()=>{
-      this.props.checkItemGroup(this.id);
-      this.props.shuffle(this.props.cards);
+    this.props.checkItemGroup(this.id);
+    this.props.shuffle(this.props.cards);
     }
   }
   render() {
@@ -135,10 +130,9 @@ class Item7 extends Component {
   constructor(props){
     super(props)
     this.id = 7
-  
     this.onClick=()=>{
-      this.props.checkItemGroup(this.id);
-      this.props.shuffle(this.props.cards);
+    this.props.checkItemGroup(this.id);
+    this.props.shuffle(this.props.cards);
     }
   }
   render() {
@@ -156,10 +150,9 @@ class Item8 extends Component {
   constructor(props){
     super(props)
     this.id = 8
-  
     this.onClick=()=>{
-      this.props.checkItemGroup(this.id);
-      this.props.shuffle(this.props.cards);
+    this.props.checkItemGroup(this.id);
+    this.props.shuffle(this.props.cards);
     }
   }
   render() {
@@ -177,10 +170,9 @@ class Item9 extends Component {
   constructor(props){
     super(props)
     this.id = 9
-  
     this.onClick=()=>{
-      this.props.checkItemGroup(this.id);
-      this.props.shuffle(this.props.cards);
+    this.props.checkItemGroup(this.id);
+    this.props.shuffle(this.props.cards);
     }
   }
   render() {
@@ -198,10 +190,9 @@ class Item10 extends Component {
   constructor(props){
     super(props)
     this.id = 10
-  
     this.onClick=()=>{
-      this.props.checkItemGroup(this.id);
-      this.props.shuffle(this.props.cards);
+    this.props.checkItemGroup(this.id);
+    this.props.shuffle(this.props.cards);
     }
   }
   render() {
@@ -219,10 +210,9 @@ class Item11 extends Component {
   constructor(props){
     super(props)
     this.id = 11
-  
     this.onClick=()=>{
-      this.props.checkItemGroup(this.id);
-      this.props.shuffle(this.props.cards);
+    this.props.checkItemGroup(this.id);
+    this.props.shuffle(this.props.cards);
     }
   }
   render() {
@@ -240,10 +230,9 @@ class Item12 extends Component {
   constructor(props){
     super(props)
     this.id = 12
-  
     this.onClick=()=>{
-      this.props.checkItemGroup(this.id);
-      this.props.shuffle(this.props.cards);
+    this.props.checkItemGroup(this.id);
+    this.props.shuffle(this.props.cards);
     }
   }
   render() {

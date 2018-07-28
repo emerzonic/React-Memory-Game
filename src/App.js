@@ -22,6 +22,7 @@ class App extends Component {
     this.checkItemGroup = (cardId) => {
       if (this.trackCards.includes(cardId)) {
         this.resetState();
+        this.shake();
         this.trackCards = [];
       } else {
         this.updateScore();
@@ -33,7 +34,7 @@ class App extends Component {
     this.updateScore = () => {
       this.setState({
         score: this.state.score + 1,
-        message: "You got it!"
+        message: "YES!"
       });
       this.updateTopscore();
     };
@@ -63,7 +64,7 @@ class App extends Component {
       <div>
         <Nav nav={this.state}/>
         <Header/>
-        <Cards checkItemGroup={this.checkItemGroup} className={this.state.shake ? 'shake': null} />
+        <Cards checkItemGroup={this.checkItemGroup}/>
         <Footer/>
       </div>
     );

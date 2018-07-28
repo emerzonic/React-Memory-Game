@@ -11,6 +11,7 @@ const assetsObject = {
     img10: require('../img/cry10.jpeg'),
     img11: require('../img/cry11.jpeg'),
     img12: require('../img/cry12.jpeg'),
-  
   }
+
+  
   export default assetsObject
