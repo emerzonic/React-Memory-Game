@@ -46,8 +46,9 @@
   color:white;
   transition: all 1s ease 1s
 }
-.ui.fixed.menu .ui.menu .item {
-  font-size: 0.9rem;
+
+p {
+  font-size: 0.85rem;
 }
 
 .ui.grid>.column:not(.row) {
