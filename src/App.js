@@ -15,38 +15,44 @@ class App extends Component {
     this.state = {
       score: 0,
       topScore: 0,
-      shake: false, 
+      shake: false,
       message: 'Click on an image to begin'
     };
     //An array to hold the crystal ids
     this.trackCrystalIds = [];
     //A method that check if id is already in array and reset the state or update the scores 
-    this.checkAndUpdate = (cardId) => {
-      if (this.trackCrystalIds.includes(cardId)) {
+    this.checkAndUpdate = (crystalId) => {
+      if (this.trackCrystalIds.includes(crystalId)) {
         this.resetState();
         this.trackCrystalIds = [];
       } else {
         this.updateScore();
-        this.trackCrystalIds.push(cardId);
+        this.trackCrystalIds.push(crystalId);
+      }
+      if (this.trackCrystalIds.length === 3) {
+        this.setState({
+          message: "You Win!",
+        });
+        this.trackCrystalIds = [];
       }
     };
 
     //This method updates the score when a new crystal is clicked
     this.updateScore = () => {
       this.setState({
-      score: this.state.score + 1,
-      message: "Yes!",
-      shake: false
-        });
+        score: this.state.score + 1,
+        message: "Yes!",
+        shake: false
+      });
       this.updateTopscore();
-      };
+    };
 
     //This method updates the topscore when a new crystal is clicked
     this.updateTopscore = () => {
-      if(this.state.score >= this.state.topScore){
+      if (this.state.score >= this.state.topScore) {
         this.setState({
-        topScore: this.state.score + 1,
-      });
+          topScore: this.state.score + 1,
+        });
       }
     };
 
@@ -56,9 +62,9 @@ class App extends Component {
         score: 0,
         message: "😜",
         shake: true
-          });
-        };
-}
+      });
+    };
+  }
 
   render() {
     return (
