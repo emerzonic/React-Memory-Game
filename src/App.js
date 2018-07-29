@@ -7,56 +7,57 @@ import Cards from './Components/Cards';
 import Footer from './Components/Footer';
 import './App.css';
 
-
+//App component
 class App extends Component {
   constructor(props) {
     super(props);
+    //Set the initial state
     this.state = {
       score: 0,
       topScore: 0,
-      shake: true, 
+      shake: false, 
       message: 'Click on an image to begin'
     };
-    this.trackCards = [];
-
-    this.checkItemGroup = (cardId) => {
-      if (this.trackCards.includes(cardId)) {
+    //An array to hold the crystal ids
+    this.trackCrystalIds = [];
+    //A method that check if id is already in array and reset the state or update the scores 
+    this.checkAndUpdate = (cardId) => {
+      if (this.trackCrystalIds.includes(cardId)) {
         this.resetState();
-        this.shake();
-        this.trackCards = [];
+        this.trackCrystalIds = [];
       } else {
         this.updateScore();
-        this.trackCards.push(cardId);
+        this.trackCrystalIds.push(cardId);
       }
     };
 
-
+    //This method updates the score when a new crystal is clicked
     this.updateScore = () => {
       this.setState({
-        score: this.state.score + 1,
-        message: "YES!"
-      });
+      score: this.state.score + 1,
+      message: "Yes!",
+      shake: false
+        });
       this.updateTopscore();
-    };
+      };
 
+    //This method updates the topscore when a new crystal is clicked
     this.updateTopscore = () => {
       if(this.state.score >= this.state.topScore){
-      this.setState({
+        this.setState({
         topScore: this.state.score + 1,
       });
       }
     };
 
+    //This method resets the score when a previous crystal is clicked
     this.resetState = () => {
       this.setState({
         score: 0,
-        message: "😜"
-      });
-    };
-
-    this.shake = ()=>{
-        this.setState({shake: true});
-    };
+        message: "😜",
+        shake: true
+          });
+        };
 }
 
   render() {
@@ -64,7 +65,7 @@ class App extends Component {
       <div>
         <Nav nav={this.state}/>
         <Header/>
-        <Cards checkItemGroup={this.checkItemGroup}/>
+        <Cards checkAndUpdate={this.checkAndUpdate} className={this.state.shake? "sixteen wide mobile eight wide tablet eight wide computer centered column shake":"sixteen wide mobile eight wide tablet eight wide computer centered column"}/>
         <Footer/>
       </div>
     );

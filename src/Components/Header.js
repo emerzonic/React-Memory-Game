@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
 
-class Header extends Component {
-  render() {
+const Header = () => {
     return (
 <div className="ui grid">
   <div className="sixteen wide centered column App-header">
@@ -14,6 +13,6 @@ class Header extends Component {
 </div>
     );
   }
-}
+
 
 export default Header;

@@ -1,3 +1,4 @@
+//Images object required from the "img" folder
 const assetsObject = {
     img1: require('../img/cry1.jpeg'),
     img2: require('../img/cry2.jpeg'),
@@ -13,5 +14,4 @@ const assetsObject = {
     img12: require('../img/cry12.jpeg'),
   }
 
-  
   export default assetsObject

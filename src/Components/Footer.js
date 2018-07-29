@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
 
-class Footer extends Component {
-  render() {
-    return (
+const Footer = () => {
+  return (
       <div className="ui bottom fixed menu">
-       <p className="item">Built with React JS - Copyright &copy;2018 Emerson Doyah Projects</p>
+       <p className="item">Built with React.js - Copyright &copy;2018 Emerson Doyah Projects</p>
       </div>
     );
   }
-}
 
-export default Footer;
+  export default Footer;
