@@ -1,6 +1,6 @@
 # React js Memory-Game
 
-This memory game is proudly build with React js. 
+This memory game is proudly built with React js. 
 
 ## Instructions
 * The game will render different crystal images to the screen.
