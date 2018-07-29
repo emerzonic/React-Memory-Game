@@ -20,7 +20,7 @@ class App extends Component {
     };
     //An array to hold the crystal ids
     this.trackCrystalIds = [];
-    //A method that check if id is already in array and reset the state or update the scores 
+    //A method that checks if id is already in array and reset the state or update the scores 
     this.checkAndUpdate = (crystalId) => {
       if (this.trackCrystalIds.includes(crystalId)) {
         this.resetState();

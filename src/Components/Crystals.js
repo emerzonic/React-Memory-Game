@@ -4,7 +4,7 @@ import React, {
 import Img from './assets';
 
 
-//This function take the images array, shuffle and return a new shuffled array
+//This function takes the images array, shuffle and return a new shuffled array
 const ShuffleCrystals = (array) => {
   let counter = array.length;
   while (counter > 0) {
@@ -23,7 +23,7 @@ export default class Crystal extends Component {
   constructor(props) {
     super(props);
 
-    //Onclick event handlier for the image
+    //Onclick event handler for the image
     this.onClick = (event) => {
       //Create a veriable to hold the image data-id attribute
       let imgId = event.target.getAttribute('data-id')
