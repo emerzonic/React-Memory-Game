@@ -29,7 +29,7 @@ class App extends Component {
         this.updateScore();
         this.trackCrystalIds.push(crystalId);
       }
-      if (this.trackCrystalIds.length === 3) {
+      if (this.trackCrystalIds.length === 12) {
         this.setState({
           message: "You Win!",
         });
