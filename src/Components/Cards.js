@@ -7,7 +7,7 @@ const Cards = (props) => {
         <div className="ui grid">
           <div className={props.className}>
             <div className="ui raised four cards"> 
-              <Crystals {...props}/>
+              <Crystals {...props}/> 
             </div> 
           </div>
         </div>
