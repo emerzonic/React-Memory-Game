@@ -67,13 +67,13 @@ class App extends Component {
   }
 
   render() {
-    let shakeClasses = "sixteen wide mobile eight wide tablet eight wide computer centered column shake";
-    let UnshakeClasses = "sixteen wide mobile eight wide tablet eight wide computer centered column";
+    let addShake = "sixteen wide mobile eight wide tablet eight wide computer centered column shake";
+    let removeShake = "sixteen wide mobile eight wide tablet eight wide computer centered column";
     return (
       <div>
         <Nav nav={this.state}/>
         <Header/>
-        <Cards checkAndUpdate={this.checkAndUpdate} className={this.state.shake? shakeClasses:UnshakeClasses}/>
+        <Cards checkAndUpdate={this.checkAndUpdate} className={this.state.shake? addShake:removeShake}/>
         <Footer/>
       </div>
     );
