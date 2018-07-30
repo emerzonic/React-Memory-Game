@@ -2,8 +2,8 @@ import React from 'react';
 import Crystals from './Crystals';
 
 //Card component
-const Cards = (props) => {
-    return (
+const Cards = props => 
+     (
         <div className="ui grid">
           <div className={props.className}>
             <div className="ui raised four cards"> 
@@ -12,7 +12,7 @@ const Cards = (props) => {
           </div>
         </div>
     ); 
-  }
+  
 
   export default Cards;
 
