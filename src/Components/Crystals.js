@@ -43,6 +43,7 @@ export default class Crystal extends Component {
       }
     }
 
+    //Get the images once
     this.getImages(Img);
     this.state = {};
     this.state.order = Object.keys(this.images);

@@ -16,7 +16,7 @@ class App extends Component {
       score: 0,
       topScore: 0,
       shake: false,
-      message: 'Click on an image to begin'
+      message: 'Click on an image to begin.'
     };
     //An array to hold the crystal ids
     this.trackCrystalIds = [];
