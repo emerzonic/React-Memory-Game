@@ -10,7 +10,6 @@ const ShuffleCrystals = (array) => {
   while (counter > 0) {
     let i = Math.floor(Math.random() * counter);
     counter--;
-    // And swap the last element with it
     let temp = array[counter];
     array[counter] = array[i];
     array[i] = temp;
@@ -34,6 +33,7 @@ export default class Crystal extends Component {
         order: ShuffleCrystals(this.state.order)
       });
     };
+    
     this.images = [];
     //This method  takes the "Img" object above and extra and 
     //push all the values to the images property array 
