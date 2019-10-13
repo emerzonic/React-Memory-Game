@@ -1,6 +1,4 @@
-import React, {
-  Component
-} from 'react';
+import React, { Component } from 'react';
 import ImageData from './assets';
 
 const ShuffleCrystals = (array) => {
@@ -39,6 +37,7 @@ export default class Crystal extends Component {
     this.state = {};
     this.state.order = Object.keys(this.images);
   }
+  
   render() {
     let Crystals = this.state.order.map((i) => {
       let image = this.images[i];
