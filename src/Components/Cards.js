@@ -1,7 +1,6 @@
 import React from 'react';
 import Crystals from './Crystals';
 
-//Card component
 const Cards = props => 
      (
         <div className="ui grid">
