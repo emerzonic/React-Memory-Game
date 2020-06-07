@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://emerzonic.github.io/React-Memory-Game/",
   "dependencies": {
-    "npm": "^6.2.0",
+    "npm": "^6.13.4",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
